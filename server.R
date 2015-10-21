@@ -10,7 +10,7 @@ shinyServer(function(input, output) {
     output$plotlyHM <- renderPlotly({
         myMatrix <- sampleMatrix()
         myClust <- hclust(dist(myMatrix))
-        myMatrix <- myMatrix[myClust$order, myClust$order]
+        myMatrix <- myMatrix[myClust$order, rev(myClust$order)]
         
         p <- plot_ly(z = myMatrix,
                 x = colnames(myMatrix),

@@ -13,7 +13,7 @@ shinyUI(pageWithSidebar(
         ),
         p("Note how performance are better with plot.ly than with d3heatmap for bigger matrices."),
         p("Source code:"),
-        a("GitHub" , href="https://github.com/Billbis/Interactive-heatmap-with-R")
+        a("GitHub" , href="https://github.com/gdevailly/Interactive-heatmap-with-R")
     ),
     
     # Show a plot of the generated distribution
